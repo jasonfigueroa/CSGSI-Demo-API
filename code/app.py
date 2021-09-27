@@ -14,7 +14,7 @@ app.config['PROPAGATE_EXCEPTIONS'] = True
 app.secret_key = 'test' # omit this line if publishing this source code to a 
 						# public location
 app.config['CORS_HEADERS'] = 'Content-Type'
-cors = CORS(app, resources={r"/*": {"origins": ["https://csgsistattrakr.jasonfigueroa.io", "http://localhost:5000"]}})
+cors = CORS(app, resources={r"/*": {"origins": ["https://csgsidemo.jasonfigueroa.io", "http://localhost:5000"]}})
 api = Api(app)
 
 @app.before_first_request
